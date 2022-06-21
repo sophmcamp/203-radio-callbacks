@@ -7,12 +7,11 @@ import plotly.graph_objs as go
 
 ########### Define your variables ######
 
-myheading1='How to use callbacks'
-tabtitle = 'xkcd'
-list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot']
-list_of_images=['outlier.png', 'correlation.png', 'gitcommit.jpg', 'scatterplot.png', 'good_code.png']
-sourceurl = 'https://xkcd.com/'
-githublink = 'https://github.com/plotly-dash-apps/203-radio-callbacks'
+myheading1='Callbacking pets in the family'
+tabtitle = 'My pet images'
+list_of_options=['Penny', 'Nadia', 'Geno', 'scatterplot']
+list_of_images=['penny.jpg', 'nadia.jpg', 'geno.jpg', 'chewey.jpg', 'good_code.png']
+githublink = 'https://github.com/sophmcamp/203-radio-callbacks'
 
 
 ########## Set up the chart
@@ -40,8 +39,6 @@ app.layout = html.Div(children=[
     html.Div(id='your_output_here', children=''),
     html.Br(),
     html.A('Code on Github', href=githublink),
-    html.Br(),
-    html.A("Data Source", href=sourceurl),
     ]
 )
 
